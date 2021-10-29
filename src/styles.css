@@ -1,0 +1,72 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+body {
+  background-color: rgb(32, 167, 32);
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.clickButton {
+  width: 30rem;
+  height: 30rem;
+  background-color: rgb(207, 35, 35);
+
+  border-radius: 40rem;
+  border: 12px solid rgb(83, 82, 82);
+
+  cursor: pointer;
+  -webkit-transition: background-color 300ms, border 300ms;
+  -o-transition: background-color 300ms, border 300ms;
+  transition: background-color 300ms, border 300ms;
+}
+
+.clickButton:active {
+  background-color: rgb(83, 82, 82);
+  border-color: rgb(207, 35, 35);
+}
+
+.clickerContainer h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+}
+
+/* - RESPONSIVE - */
+
+@media (max-width: 330px) {
+  .clickerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .clickButton {
+    width: 26rem;
+    height: 26rem;
+  }
+}
